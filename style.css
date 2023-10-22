@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poiret+One&display=swap');
+
+  body {
+
+      font-family: 'Poiret One', cursive;
+      overflow: hidden;
+      background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+
+
+  }
+
+  .container {
+    padding-top: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .digitalclock {
+
+      width: fit-content;
+      /* height: max-content; */
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.1);
+
+  }
+
+  p {
+      /* padding: 10px; */
+      color: white;
+      font-size: 5rem;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0 10px;
+  }
+
+  .a {
+    position: absolute;
+      width: fit-content;
+        height: 10vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    padding-left: 33%;
+    top: 20%;
+  }
+
+
+
+  @media(max-width:844px) {
+    .a{
+        position: relative;
+        float:left;
+    }
+    .a p{
+        font-size: 2rem;
+    }
+  }
+
+  @media(max-width:768px) {
+    .a{
+        position: relative;
+        float:left;
+    }
+    .a p{
+        font-size: 2rem;
+    }
+      #bar1,
+      #bar2 {
+          display: none;
+      }
+
+      .digitalclock {
+          text-align: center;
+          width: 100%;
+
+      }
+ 
+
+      p {
+          display: block;
+      }
+  }
+
+  @media(max-width:480px) {
+    .a{
+        position: relative;
+        float:left;
+    }
+    .a p{
+        font-size: 2rem;
+    }
+      .digitalclock {
+          text-align: center;
+          width: 100%;
+          height: fit-content;
+
+      }
+     
+      p {
+          font-size: 4rem;
+      }
+  }
+
+  @media(max-width:230px) {
+    .a{
+        position: relative;
+        float:left;
+    }
+    .a p{
+        font-size: 2rem;
+    }
+      .digitalclock {
+          text-align: center;
+          width: 100%;
+
+      }
+   
+
+      p {
+          font-size: 2rem;
+      }
+  }
